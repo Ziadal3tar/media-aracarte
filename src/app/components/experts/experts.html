@@ -1,0 +1,83 @@
+<section class="stats-section">
+
+  <div class="overlay-bg"></div>
+
+  <div class="container">
+
+    <span class="badge">POWERING COLLABORATION ACROSS MEDIA</span>
+
+    <h2>Collaborate. Elevate. Succeed</h2>
+
+    <p class="desc">
+      Empower advertisers, agencies, and media owners to work seamlessly.
+    </p>
+
+    <button class="cta-btn">Meet the Experts</button>
+
+    <!-- Stats -->
+    <div class="stats-box">
+      <div class="stat">
+        <h3>110+</h3>
+        <p>Top Agencies Trust Media LaCarte</p>
+      </div>
+
+      <div class="stat">
+        <h3>1M</h3>
+        <p>Advertisers Reaching the Right Audience</p>
+      </div>
+
+      <div class="stat">
+        <h3>98.99%</h3>
+        <p>Seamless Media Transactions for Owners</p>
+      </div>
+    </div>
+
+
+    <div class="orbit-container">
+      <div class="orbit-circle">
+        <div class="avatars">
+          <div class="img" *ngFor="let item of users1;let i = index"
+            [style.transform]="getTransform(i, users1.length ,'users1')"><img [src]="item.img" alt="" srcset=""></div>
+        </div>
+      </div>
+      <div class="orbit-circle circle-2">
+        <div class="avatars">
+          <div class="img" *ngFor="let item of users2;let i = index"
+            [style.transform]="getTransform(i, users1.length ,'users2')"><img [src]="item.img" alt="" srcset=""></div>
+        </div>
+      </div>
+      <div class="orbit-circle inner">
+        <div class="avatars">
+          <div class="img" *ngFor="let item of users3;let i = index"
+            [style.transform]="getTransform(i, users1.length ,'users3')">
+            <img [src]="item.img" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- CTA Card -->
+    <div class="cta-card">
+
+      <h3>
+        Supercharge Your Media Strategy with <br />
+        Our 100% Efficiency
+      </h3>
+
+      <div class="features">
+        <span>Plan, Book, and Manage Campaigns</span>
+        <span>Maximize Reach and ROI</span>
+      </div>
+
+      <button>
+        Optimize Your Media Today →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>

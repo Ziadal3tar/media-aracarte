@@ -1,0 +1,129 @@
+.hero {
+  min-height: 100vh;
+  padding: 20px 60px;
+  background: radial-gradient(circle at 70% 30%, #0b1c2c, #000);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+      color: #ff2d55;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+
+      li {
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.3s;
+
+        &.active,
+        &:hover {
+          color: #ff2d55;
+          opacity: 1;
+        }
+      }
+    }
+
+    .login-btn {
+      background: #ff2d55;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  /* HERO TEXT */
+  .hero-content {
+    margin-top: 100px;
+    max-width: 600px;
+
+    .sub-title {
+      font-size: 12px;
+      opacity: 0.6;
+      margin-bottom: 10px;
+    }
+
+    .small-heading {
+      color: #ff2d55;
+      margin-bottom: 10px;
+    }
+
+    .main-heading {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 18px;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      background: linear-gradient(90deg, #ff2d55, #ff6a88);
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  /* IMAGE CARD */
+  .hero-card {
+    position: absolute;
+    right: 60px;
+    bottom: 40px;
+    width: 420px;
+
+    img {
+      width: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+
+    .learn-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}
